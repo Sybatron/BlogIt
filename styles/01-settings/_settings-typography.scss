@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ruda:wght@500&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+a,
+p,
+span,
+button {
+    font-family: 'Ruda', sans-serif;
+}
+
+a,
+p {
+    font-size: 16px;
+    line-height: 125%;
+}
+
+button {
+    font-size: 14px;
+    font-weight: bold;
+}

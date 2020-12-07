@@ -1,0 +1,24 @@
+.c-input-transparent {
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: transparent;
+
+    &--purple {
+        border: 1px solid $secondary-800;
+        color: $white;
+
+        &::placeholder {
+            color: $grey-300;
+        }
+    }
+
+    &--light {
+        border: 1px solid $secondary-500;
+        color: $white;
+
+        &::placeholder {
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.c-avatar {
+	border: 6px solid $secondary-700;
+	border-radius: 50%;
+
+	&__info-name {
+		display: block;
+
+		font-family: Montserrat;
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: bold;
+
+		color: $secondary-300;
+	}
+
+	&__info-labour {
+		display: block;
+		// @include small-paragraph-font;
+
+		color: $grey-400;
+	}
+}

@@ -1,0 +1,13 @@
+.o-position-wrapper {
+    position: relative;
+}
+
+.o-position-fixed {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+.o-page-wrapper {
+    margin: 0 75px;
+}

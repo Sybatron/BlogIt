@@ -1,0 +1,13 @@
+.c-button {
+	padding: 14px $padding-secondary;
+	border-radius: 100px;
+	text-transform: uppercase;
+
+	&--primary {
+		border: none;
+		background-color: $secondary-800;
+		color: $white;
+	}
+
+	// &--secondary {}
+}
