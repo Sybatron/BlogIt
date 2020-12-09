@@ -11,3 +11,13 @@
 .o-page-wrapper {
     margin: 0 75px;
 }
+
+.o-horizontal-list {
+    display: flex;
+    flex-direction: row;
+
+    &--centered {
+        justify-content: center;
+        align-items: center;
+    }
+}
