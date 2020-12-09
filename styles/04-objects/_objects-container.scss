@@ -21,3 +21,13 @@
         align-items: center;
     }
 }
+
+.o-vertical-list {
+    display: flex;
+    flex-direction: column;
+
+    &--centered {
+        justify-content: center;
+        align-items: center;
+    }
+}
