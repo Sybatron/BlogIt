@@ -1,0 +1,24 @@
+.c-header {
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 15px solid $secondary-900;
+    box-shadow: $box-shadow-2dp;
+    background-color: $primary-700;
+
+    &__link {
+        margin: 0 $padding-small;
+
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $secondary-600;
+
+        @include fade-in-transition-color($secondary-300);
+    }
+
+    &__logo {
+        margin-left: 15px;
+    }
+}

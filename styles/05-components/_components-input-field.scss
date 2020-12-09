@@ -5,7 +5,7 @@
     background-color: transparent;
 
     &--purple {
-        border: 1px solid $secondary-800;
+        border: 1px solid $secondary-900;
         color: $white;
 
         &::placeholder {
@@ -14,7 +14,7 @@
     }
 
     &--light {
-        border: 1px solid $secondary-500;
+        border: 1px solid $secondary-300;
         color: $white;
 
         &::placeholder {

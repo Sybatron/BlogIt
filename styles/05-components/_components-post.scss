@@ -1,0 +1,37 @@
+.c-post {
+    padding: $padding-secondary;
+    padding-left: $padding-big;
+
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom: 3px solid $grey-700;
+    box-shadow: $box-shadow-1dp;
+
+    background-color: $primary-800;
+    @include fade-in-transition-bg-color($primary-700);
+
+    cursor: pointer;
+
+    &__title {
+        display: inline;
+        color: $secondary-700;
+    }
+
+    &__date {
+        display: inline;
+        margin: 0;
+        position: absolute;
+        right: -15px;
+
+        @include font-small-paragraph;
+        color: $grey-400;
+    }
+
+    &__content {
+        color: $grey-300;
+    }
+}
+
+.c-post-container {
+    //TODO adding loading animation for the posts
+}

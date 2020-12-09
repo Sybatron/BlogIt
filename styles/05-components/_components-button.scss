@@ -1,13 +1,15 @@
 .c-button {
-	padding: 14px $padding-secondary;
-	border-radius: 100px;
-	text-transform: uppercase;
+    margin-bottom: $padding-default;
+    padding: 14px $padding-secondary;
+    border-radius: 100px;
+    text-transform: uppercase;
 
-	&--primary {
-		border: none;
-		background-color: $secondary-800;
-		color: $white;
-	}
+    &--primary {
+        border: none;
+        background-color: $secondary-700;
 
-	// &--secondary {}
+        @include fade-in-transition-bg-color($secondary-900);
+    }
+
+    // &--secondary {}
 }
