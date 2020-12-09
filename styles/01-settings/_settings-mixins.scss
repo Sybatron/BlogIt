@@ -6,3 +6,17 @@
         color: $color;
     }
 }
+
+@mixin fade-in-transition-bg-color($color) {
+    transition: background-color 0.3s ease-out;
+
+    &:hover {
+        background-color: $color;
+    }
+}
+
+//* Font mixins
+@mixin font-small-paragraph {
+    font-size: 14px;
+    line-height: 16px;
+}
