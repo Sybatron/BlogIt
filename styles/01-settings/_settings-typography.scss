@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ruda:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ruda:wght@500&display=swap");
 
 h1,
 h2,
@@ -6,7 +6,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
+    color: $white;
 }
 
 h1 {
@@ -17,7 +18,8 @@ a,
 p,
 span,
 button {
-    font-family: 'Ruda', sans-serif;
+    font-family: "Ruda", sans-serif;
+    color: $white;
 }
 
 a,

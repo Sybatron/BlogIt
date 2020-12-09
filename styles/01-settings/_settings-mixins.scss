@@ -1,0 +1,8 @@
+//* Transition mixins
+@mixin fade-in-transition-color($color) {
+    transition: color 0.3s ease-out;
+
+    &:hover {
+        color: $color;
+    }
+}
