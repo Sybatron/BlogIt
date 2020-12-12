@@ -1,8 +1,14 @@
-.c-input-transparent {
+.c-input {
+    margin: $padding-small 0;
     padding: 16px;
+    width: 100%;
+
     border-radius: 10px;
-    box-shadow: none;
-    background-color: transparent;
+
+    &--transparent {
+        box-shadow: none;
+        background-color: transparent;
+    }
 
     &--purple {
         border: 1px solid $secondary-900;
@@ -20,5 +26,19 @@
         &::placeholder {
             color: $white;
         }
+    }
+
+    &--post {
+        resize: none;
+        height: 100%;
+        min-height: 250px;
+        width: 100%;
+    }
+
+    &--comment {
+        resize: none;
+        height: 100%;
+        min-height: 150px;
+        width: 100%;
     }
 }

@@ -1,0 +1,30 @@
+.c-comment {
+    margin-bottom: 4px;
+    padding: $padding-default;
+    padding-left: $padding-big;
+
+    border: 1px solid $primary-800;
+    border-radius: 5px;
+    box-shadow: $box-shadow-comment;
+
+    background-color: $primary-700;
+
+    &__author {
+        display: inline;
+        color: $secondary-700;
+    }
+
+    &__date {
+        display: inline;
+        margin: 0;
+        position: absolute;
+        right: -15px;
+
+        @include font-small-paragraph;
+        color: $grey-400;
+    }
+
+    &__content {
+        color: $grey-300;
+    }
+}

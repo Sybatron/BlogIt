@@ -10,11 +10,25 @@
     background-color: $primary-800;
     @include fade-in-transition-bg-color($primary-700);
 
-    cursor: pointer;
+    &--details {
+        border-radius: 12px;
+        border: 1px solid $secondary-900;
+
+        background-color: transparent;
+        transition: none !important;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
 
     &__title {
         display: inline;
         color: $secondary-700;
+    }
+
+    &__content {
+        color: $grey-300;
     }
 
     &__date {
@@ -27,7 +41,13 @@
         color: $grey-400;
     }
 
-    &__content {
+    &__author {
+        display: inline-block;
+        position: absolute;
+        right: -15px;
+        top: 0px;
+
+        @include font-small-paragraph;
         color: $grey-300;
     }
 }
