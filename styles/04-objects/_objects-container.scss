@@ -31,3 +31,10 @@
         align-items: center;
     }
 }
+
+.o-grid-2cols {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: baseline;
+    grid-column-gap: 50px;
+}
