@@ -17,31 +17,40 @@
             </div>
         </header>
         <main class="c-main o-page-wrapper">
-            <form action="/post/create" method="POST">
+            <form action="/user/login" method="POST">
                 <div class="o-vertical-list o-vertical-list--centered">
-                    <label for="title">Title</label>
+                    <label for="username">Username</label>
                     <input
                         type="text"
                         class="c-input c-input--transparent c-input--purple"
-                        placeholder="Title"
-                        maxlength="100"
-                        name="title"
+                        placeholder="Username"
+                        name="username"
                         value=""
                     />
                 </div>
                 <div class="o-vertical-list o-vertical-list--centered">
-                    <label for="content">Content</label>
-                    <textarea
-                        name="content"
-                        type="text"
-                        class="c-input c-input--transparent c-input--purple c-input--post"
-                        placeholder="Content"
-                        maxlength="5000"
-                    ></textarea>
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        class="c-input c-input--transparent c-input--purple"
+                        placeholder="Password"
+                        name="password"
+                        value=""
+                    />
+                </div>
+                <div class="o-vertical-list o-vertical-list--centered">
+                    <label for="repassword">Re-Password</label>
+                    <input
+                        type="password"
+                        class="c-input c-input--transparent c-input--purple"
+                        placeholder="Re-Password"
+                        name="repassword"
+                        value=""
+                    />
                 </div>
 
                 <button type="submit" class="c-button c-button--primary">
-                    Create a post
+                    Register
                 </button>
             </form>
         </main>

@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                />
+                <link rel="stylesheet" href="../styles/style/style.css" />
+                <title>BlogIt</title>
+            </head>
+            <body>
+                <header class="c-header o-position-fixed o-horizontal-list">
+                    <a href="/">
+                        <h1 class="c-header__logo">BlogIt</h1>
+                    </a>
+                    <div class="o-horizontal-list o-horizontal-list--centered">
+                        <p class="c-header__paragraph">Welcome to BlogIt</p>
+                        <!-- TODO This gonna lead to the profile page -->
+                        <a class="c-header__link" href="#">User</a>
+                    </div>
+                </header>
+                <main class="c-main o-page-wrapper">
+                    <article class="c-post c-post--details">
+                        <div class="o-position-wrapper">
+                            <h3 class="c-post__title">post title</h3>
+                            <p class="c-post__date">01.01.1010</p>
+                            <p class="c-post__author">author</p>
+                        </div>
+                        <p class="c-post__content">post text</p>
+                    </article>
+
+                    <div class="o-horizontal-list">
+                        <!-- <i class="fab fa-gratipay c-btn-reaction"></i> -->
+                        <a href="/post/comment"
+                            ><i
+                                class="fas fa-comment-alt c-btn-reaction c-btn-reaction--comment"
+                            ></i
+                        ></a>
+                    </div>
+
+                    <article class="c-comment">
+                        <div class="o-position-wrapper">
+                            <h3 class="c-comment__author">comment author</h3>
+                            <p class="c-comment__date">01.01.1010</p>
+                        </div>
+                        <p class="c-comment__content">comment text</p>
+                    </article>
+
+                    <article class="c-comment">
+                        <div class="o-position-wrapper">
+                            <h3 class="c-comment__author">comment author</h3>
+                            <p class="c-comment__date">01.01.1010</p>
+                        </div>
+                        <p class="c-comment__content">comment text</p>
+                    </article>
+                </main>
+            </body>
+        </html>
+    </body>
 </html>
