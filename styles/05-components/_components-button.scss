@@ -10,6 +10,40 @@
 
         @include fade-in-transition-bg-color($secondary-900);
     }
+}
 
-    // &--secondary {}
+.c-button-like {
+    display: inline-block;
+    margin-bottom: $padding-default;
+    padding: 14px $padding-secondary;
+    border-radius: 100px;
+    text-transform: uppercase;
+
+    &--primary {
+        border: none;
+        background-color: $secondary-700;
+
+        @include fade-in-transition-bg-color($secondary-900);
+    }
+
+    &--secondary {
+        border: $secondary-800;
+    }
+}
+
+.c-btn-reaction {
+    margin: 5px;
+    padding: 7px;
+
+    border-radius: 50%;
+    border: 2px solid $white;
+
+    font-size: 24px;
+    color: $white;
+
+    &--comment {
+        @include fade-in-transition-color($blue-800);
+        @include fade-in-transition-bg-color($blue-comment);
+        @include fade-in-transition-border-color($blue-800);
+    }
 }

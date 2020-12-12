@@ -17,31 +17,20 @@
             </div>
         </header>
         <main class="c-main o-page-wrapper">
-            <form action="/post/create" method="POST">
+            <form action="/post/comment" method="POST">
                 <div class="o-vertical-list o-vertical-list--centered">
-                    <label for="title">Title</label>
-                    <input
-                        type="text"
-                        class="c-input c-input--transparent c-input--purple"
-                        placeholder="Title"
-                        maxlength="100"
-                        name="title"
-                        value=""
-                    />
-                </div>
-                <div class="o-vertical-list o-vertical-list--centered">
-                    <label for="content">Content</label>
+                    <label for="comment">Comment</label>
                     <textarea
-                        name="content"
+                        name="comment"
                         type="text"
-                        class="c-input c-input--transparent c-input--purple c-input--post"
-                        placeholder="Content"
-                        maxlength="5000"
+                        class="c-input c-input--transparent c-input--purple c-input--comment"
+                        placeholder="Comment"
+                        maxlength="1500"
                     ></textarea>
                 </div>
 
                 <button type="submit" class="c-button c-button--primary">
-                    Create a post
+                    Comment post
                 </button>
             </form>
         </main>

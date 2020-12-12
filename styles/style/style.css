@@ -1,16 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ruda:wght@500&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.15.1/css/all.css");
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+label {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
 }
 
 h1 {
   font-size: 36px;
+}
+
+label {
+  font-size: 24px;
 }
 
 a,
@@ -357,6 +363,37 @@ body {
           align-items: center;
 }
 
+.o-vertical-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.o-vertical-list--centered {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.o-grid-2cols {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content auto;
+      grid-template-columns: -webkit-max-content auto;
+      grid-template-columns: max-content auto;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  grid-column-gap: 50px;
+}
+
 .c-button {
   margin-bottom: 24px;
   padding: 14px 32px;
@@ -375,6 +412,128 @@ body {
   background-color: #9f2b67;
 }
 
+.c-button-like {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding: 14px 32px;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+
+.c-button-like--primary {
+  border: none;
+  background-color: #c51162;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.c-button-like--primary:hover {
+  background-color: #9f2b67;
+}
+
+.c-button-like--secondary {
+  border: #ad1457;
+}
+
+.c-btn-reaction {
+  margin: 5px;
+  padding: 7px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.c-btn-reaction--comment {
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  -webkit-transition: border-color 0.2s ease-out;
+  transition: border-color 0.2s ease-out;
+}
+
+.c-btn-reaction--comment:hover {
+  color: #00838f;
+}
+
+.c-btn-reaction--comment:hover {
+  background-color: rgba(0, 188, 212, 0.25);
+}
+
+.c-btn-reaction--comment:hover {
+  border-color: #00838f;
+}
+
+.c-input {
+  margin: 12px 0;
+  padding: 16px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.c-input--transparent {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+}
+
+.c-input--purple {
+  border: 1px solid #9f2b67;
+  color: #ffffff;
+}
+
+.c-input--purple::-webkit-input-placeholder {
+  color: #d6d6d6;
+}
+
+.c-input--purple:-ms-input-placeholder {
+  color: #d6d6d6;
+}
+
+.c-input--purple::-ms-input-placeholder {
+  color: #d6d6d6;
+}
+
+.c-input--purple::placeholder {
+  color: #d6d6d6;
+}
+
+.c-input--light {
+  border: 1px solid #de6ea1;
+  color: #ffffff;
+}
+
+.c-input--light::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.c-input--light:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.c-input--light::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.c-input--light::placeholder {
+  color: #ffffff;
+}
+
+.c-input--post {
+  resize: none;
+  height: 100%;
+  min-height: 250px;
+  width: 100%;
+}
+
+.c-input--comment {
+  resize: none;
+  height: 100%;
+  min-height: 150px;
+  width: 100%;
+}
+
 .c-page-separator {
   width: 100%;
   height: 3px;
@@ -382,6 +541,23 @@ body {
 
 .c-page-separator--profile {
   background-color: #9f2b67;
+}
+
+.c-avatar {
+  padding: 14px;
+  border: 3px solid #d81b60;
+  border-radius: 25%;
+  font-size: 32px;
+  color: #d81b60;
+}
+
+.c-avatar__name {
+  display: block;
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #de6ea1;
 }
 
 .c-header {
@@ -427,16 +603,31 @@ body {
   background-color: #37474f;
   -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
-  cursor: pointer;
 }
 
 .c-post:hover {
   background-color: #455a64;
 }
 
+.c-post--details {
+  border-radius: 12px;
+  border: 1px solid #9f2b67;
+  background-color: transparent;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.c-post--details:hover {
+  background-color: transparent;
+}
+
 .c-post__title {
   display: inline;
   color: #c51162;
+}
+
+.c-post__content {
+  color: #d6d6d6;
 }
 
 .c-post__date {
@@ -449,10 +640,46 @@ body {
   color: #b2b2b2;
 }
 
-.c-post__content {
+.c-post__author {
+  display: inline-block;
+  position: absolute;
+  right: -15px;
+  top: 0px;
+  font-size: 14px;
+  line-height: 16px;
   color: #d6d6d6;
 }
 
 .c-main {
   margin-top: 24px;
+}
+
+.c-comment {
+  margin-bottom: 4px;
+  padding: 24px;
+  padding-left: 64px;
+  border: 1px solid #37474f;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
+  background-color: #455a64;
+}
+
+.c-comment__author {
+  display: inline;
+  color: #c51162;
+}
+
+.c-comment__date {
+  display: inline;
+  margin: 0;
+  position: absolute;
+  right: -15px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #b2b2b2;
+}
+
+.c-comment__content {
+  color: #d6d6d6;
 }

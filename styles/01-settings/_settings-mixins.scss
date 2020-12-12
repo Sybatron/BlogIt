@@ -15,6 +15,14 @@
     }
 }
 
+@mixin fade-in-transition-border-color($color) {
+    transition: border-color 0.2s ease-out;
+
+    &:hover {
+        border-color: $color;
+    }
+}
+
 //* Font mixins
 @mixin font-small-paragraph {
     font-size: 14px;
