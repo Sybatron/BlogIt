@@ -27,7 +27,11 @@
     }
 
     &--secondary {
-        border: $secondary-800;
+        border: 1px solid $secondary-300;
+        color: $secondary-300;
+
+        @include fade-in-transition-color($secondary-600);
+        @include fade-in-transition-border-color($secondary-600);
     }
 }
 
