@@ -1,0 +1,12 @@
+<a class="c-button-like c-button-like--primary" href="/post/create">Add new post</a>
+{{#each posts}}
+<a href="/post/details/">
+    <article class="c-post">
+        <div class="o-position-wrapper">
+            <h3 class="c-post__title">{{title}}</h3>
+            <p class="c-post__date">{{date}}</p>
+        </div>
+        <p class="c-post__content">{{content}}</p>
+    </article>
+</a>
+{{/each}}

@@ -432,6 +432,7 @@ body {
 }
 
 .c-button-like--secondary {
+  margin: 5px;
   border: 1px solid #de6ea1;
   color: #de6ea1;
   -webkit-transition: color 0.3s ease-out;

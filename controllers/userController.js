@@ -21,14 +21,21 @@ module.exports = {
 
     post: {
         register(req, res, next) {
-            const { email, fullName, password } = { ...req.body };
+            const { username, password, repassword } = { ...req.body };
 
-            User.findOne({ email })
+            User.findOne({ username })
                 .then((user) => {
                     if (user) {
-                        throw new Error("The given email is already in use...");
+                        throw new Error(
+                            "The given username is already in use..."
+                        );
                     }
-                    return User.create({ email, fullName, password });
+                    if (password !== repassword) {
+                        throw new Error(
+                            "The given passwords are not the same..."
+                        );
+                    }
+                    return User.create({ username, password });
                 })
                 .then((createdUser) => {
                     res.redirect("/user/login");
@@ -40,9 +47,9 @@ module.exports = {
         },
 
         login(req, res, next) {
-            const { email, password } = req.body;
+            const { username, password } = req.body;
 
-            User.findOne({ email })
+            User.findOne({ username })
                 .then((user) => {
                     return Promise.all([user.comparePasswords(password), user]);
                 })

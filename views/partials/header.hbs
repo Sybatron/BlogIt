@@ -1,0 +1,15 @@
+<header class="c-header o-position-fixed o-horizontal-list">
+    <a href="/home/">
+        <h1 class="c-header__logo">BlogIt</h1>
+    </a>
+    <div class="o-horizontal-list o-horizontal-list--centered">
+        <p class="c-header__paragraph">Welcome to BlogIt</p>
+        {{#if username}}
+        <a class="c-header__link" href="/user/profile">{{username}}</a>
+        {{else}}
+        <a class="c-button-like c-button-like--secondary" href="/user/login">Login</a>
+        <a class="c-button-like c-button-like--secondary" href="/user/register">Register</a>
+        {{/if}}
+
+    </div>
+</header>
